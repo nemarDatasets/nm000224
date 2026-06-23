@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Imagined speech EEG dataset — short and long words (Nguyen et al. 2017)",
-  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks involving short and long words. Participants were cued to imagine speaking either the word 'cooperate' or 'in' in response to auditory and visual stimuli, with data collected at 256 Hz using 64 EEG channels. The dataset includes 1,200 trials (600 per class) from each participant, with each trial split into 3 overlapping 2-second epochs, yielding 3,600 total epochs. Data has been preprocessed with bandpass filtering, notch filtering, and artifact removal, achieving reported classification accuracy of 73.3±8.9%.",
-  "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system at 256 Hz sampling rate with 64 channels (60 EEG, 4 EOG) in a standard 10-20 montage. Participants performed imagined speech tasks cued by auditory beeps (5 beeps at 1.4 s rhythm) and visual cues. Each 5-second trial was divided into 3 overlapping 2-second epochs. Preprocessing of the raw data included downsampling from 1000 Hz to 256 Hz, 5th-order Butterworth bandpass filtering (8-70 Hz), 60 Hz notch filtering, and adaptive EOG artifact removal. The derivative dataset presented here contains the preprocessed EEG data at 256 Hz.",
+  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech discrimination tasks between short and long words ('cooperate' vs 'in'). Data were acquired at 256 Hz using 64 EEG channels with standard preprocessing including bandpass filtering (8-70 Hz), notch filtering (60 Hz), and artifact removal. The dataset contains 1,200 trials analyzed using Riemannian manifold and relevance vector machine approaches for brain-computer interface applications, achieving mean classification accuracy of 73.3±8.9%.",
+  "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system at 256 Hz sampling rate with 64 channels (60 EEG, 4 EOG) in a standard 10-20 montage. Participants performed imagined speech discrimination tasks (not motor imagery) cued by auditory beeps (5 beeps at 1.4 s rhythm) and visual cues, with 5-second analysis windows split into 3 overlapping 2-second epochs. Preprocessing included 5th-order Butterworth bandpass filtering (8-70 Hz), 60 Hz notch filtering, and adaptive EOG artifact removal. Analysis employed Riemannian manifold and relevance vector machine approaches for classification.",
   "license": "other-open",
   "dataset_type": "derivative",
   "authors": {
@@ -19,10 +19,10 @@
       "term": "EEG"
     },
     {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "motor imagery"
+      "term": "brain-computer interface",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "Riemannian manifold"
@@ -80,5 +80,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "f83b5f0d21b1b5dcb8f2ce7a02a2a567bd6ceae08aa1a8323c5c9aeba0b1e42e"
+  "source_hash": "764ea1862f5936e057c100e70553f40c67c55569aaf59e9dcbe905b320e7e2f9"
 }
