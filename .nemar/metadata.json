@@ -2,7 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Imagined speech EEG dataset — short and long words (Nguyen et al. 2017)",
-  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks, specifically discriminating between short and long words ('cooperate' vs 'in'). Data were acquired at 256 Hz using 64 EEG channels and processed with bandpass filtering (8-70 Hz), notch filtering (60 Hz), and artifact removal. The dataset contains 1,200 trials. Classification analyses using Riemannian manifold and relevance vector machine approaches achieved mean classification accuracy of 73.3±8.9%.",
+  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks, specifically discriminating between short and long words ('cooperate' vs 'in'). Data were acquired at 256 Hz using 64 EEG channels and processed with bandpass filtering (8-70 Hz), notch filtering (60 Hz), and artifact removal. The dataset contains 1,200 trials analyzed using Riemannian manifold and relevance vector machine approaches for brain-computer interface applications, achieving mean classification accuracy of 73.3±8.9%. This is a derivative dataset converted from the original MOABB benchmark collection.",
   "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system at 256 Hz sampling rate with 64 channels (60 EEG, 4 EOG) in a standard 10-20 montage. Participants performed imagined speech tasks cued by auditory beeps (5 beeps at 1.4 s rhythm) and visual cues, with 5-second analysis windows split into 3 overlapping 2-second epochs. Preprocessing included 5th-order Butterworth bandpass filtering (8-70 Hz), 60 Hz notch filtering, and adaptive EOG artifact removal.",
   "license": "other-open",
   "dataset_type": "derivative",
@@ -23,6 +23,9 @@
     },
     {
       "term": "Riemannian manifold"
+    },
+    {
+      "term": "motor imagery"
     },
     {
       "term": "covariance matrix"
@@ -78,5 +81,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "9a1f32cdf5997b854c96bd23badde1bb53c031684e22d4aa2e9918b8802d5d8c"
+  "source_hash": "8188404fc11bee1bcb394e8e232c12605e572ddf4d123132e687fb4b035b7c2f"
 }
